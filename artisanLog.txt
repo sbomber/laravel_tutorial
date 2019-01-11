@@ -1,0 +1,73 @@
+  363  php artisan serve
+  364  php artisan serve
+  452  php artisan serve
+  453  php artisan migrate
+  455  php artisan migrate:fresh
+  456  php artisan make:migration create_projects_table
+  457  php artisan migrate
+  458  php artisan make:model Project
+  460  php artisan tinker
+  461  php artisan make:controller ProjectsController
+  462  php artisan make:view projects/wow
+  463  php artisan serve
+  477  php artisan serve
+  478  php artisan serve
+  479  php artisan serve
+  480  php artisan list routes
+  481  php artisan list route
+  482  php artisan route:list
+  483  php artisan route:list
+  484  php artisan route:list
+  485  php artisan route:list
+  486  php artisan make:controller ProjectsController -r -m
+  487  php artisan route:list
+  488  php artisan make:model
+  489  php artisan make:model Task -m -f
+  490  php artisan migrate
+  491  php artisan tinker
+  492  php artisan tinker
+  493  php artisan make:controller ProjectTaskController
+  494  php artisan make:controller ProjectTasksController
+  495  php artisan make:controller ProjectTasksController
+  496  php artisan route:list
+  497  php artisan make:controller 
+  498  php artisan make:controller -h
+  499  php artisan make:controller ProjectTasksController -r
+  500  php artisan make:controller ProjectTasksController -r
+  501  php artisan route:list
+  502  php artisan make:controller CompletedTaskController
+  542  history | grep 'php artisan;
+  543  history | grep 'php artisan'
+  544  history | grep 'php artisan' >> artisanLog.txt
+  387  php artisan serve
+  388  php artisan serve
+  476  php artisan serve
+  477  php artisan migrate
+  479  php artisan migrate:fresh
+  480  php artisan make:migration create_projects_table
+  481  php artisan migrate
+  482  php artisan make:model Project
+  484  php artisan tinker
+  485  php artisan make:controller ProjectsController
+  486  php artisan make:view projects/wow
+  487  php artisan serve
+  594  history | grep -l "php artisan"
+  597  history | grep 'php artisan'
+  604  history | grep 'php artisan' >> artisanLog.txt 
+  385  php artisan serve
+  386  php artisan serve
+  474  php artisan serve
+  475  php artisan migrate
+  477  php artisan migrate:fresh
+  478  php artisan make:migration create_projects_table
+  479  php artisan migrate
+  480  php artisan make:model Project
+  482  php artisan tinker
+  483  php artisan make:controller ProjectsController
+  484  php artisan make:view projects/wow
+  485  php artisan serve
+  499  php artisan serve
+  500  php artisan serve
+  505  php artisan serve
+  506  history | grep 'php artisan'
+  507  history | grep 'php artisan' >> artisanLog.txt 

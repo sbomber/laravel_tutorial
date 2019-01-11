@@ -41,6 +41,11 @@ return [
 
     'debug' => env('APP_DEBUG', false),
 
+    /**
+     * DRB: Adding my own debug level env variable
+     */
+    'low_lvl_debug' => env( 'APP_LOW_LVL_DEBUG', false),
+
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -67,7 +72,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Chicago',
 
     /*
     |--------------------------------------------------------------------------

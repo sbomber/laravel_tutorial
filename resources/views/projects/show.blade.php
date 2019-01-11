@@ -1,4 +1,4 @@
-@extends('projects.layouts.layoutBulma')
+@extends('projects.layouts.layout')
 
 @section('title')
     Project Viewer

@@ -1,4 +1,4 @@
-@extends('projects.layouts.layoutBulma')
+@extends('projects.layouts.layout')
 {{-- @extends('projects.layouts.layoutUikit') --}}
 
 @section('title')

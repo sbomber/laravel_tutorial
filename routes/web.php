@@ -1,16 +1,5 @@
 <?php
 
-/**
- * Playground
- */
-// app()->bind( 'example', function() {
-//     return new App\Example;
-// });
-
-// app()->singleton('example', function () {
-//     return new App\Example;
-// });
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,22 +9,38 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 Route::get('/', function () {
-    // dd( app('example'), app('example'));
-    return view('welcome');
+
+    // if (env('APP_LOW_LVL_DEBUG', false)) {
+    if (config( 'app.low_lvl_debug')) {
+        /**
+         * Playground
+         */
+        // app()->bind( 'example', function() {
+        //     return new App\Example;
+        // });
+
+        app()->singleton('example', function () {
+            return new App\Example;
+        });
+
+        dd( app('example'), app('example'));
+    } else {
+        return view('welcome');
+    }
 });
 
 /*
-	DELETE /projects/<id> (destroy):	Delete/remove project
-	GET /projects (index): 				Returns all projects
-	GET /projects/create (create):		Allows users to create a new project
-	GET /projects/<id> (show):			Display project by ID
-	GET /projects/<id>/edit (edit):		Edit a current project
-	PATCH /projects/<id> (update):		Update a current project
-	POST /projects (store): 			Save a new project
-*/
+DELETE /projects/<id> (destroy):    Delete/remove project
+GET /projects (index):                 Returns all projects
+GET /projects/create (create):        Allows users to create a new project
+GET /projects/<id> (show):            Display project by ID
+GET /projects/<id>/edit (edit):        Edit a current project
+PATCH /projects/<id> (update):        Update a current project
+POST /projects (store):             Save a new project
+ */
 //  Option 1 for creating the routes == NICE
 Route::resource('/projects', 'ProjectsController');
 
