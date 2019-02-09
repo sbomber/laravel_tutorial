@@ -1,15 +1,32 @@
-@extends('projects.layouts.layout')
+@extends('layouts.layoutDevFolio')
 
 @section('title')
     Create new project
 @endsection
 
+@section('intro')
+<!--/ Intro Skew Star /-->
+<div id="home" class="intro route bg-image" style="background-image: url(../../../css/DevFolio/img/overlay-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                {{--
+                <p class="display-6 color-d">Hello, world!</p> --}}
+                <h1 class="intro-title mb-4">9K Tech, LLC.</h1>
+                <p class="intro-subtitle">
+                    <span class="text-slider-items">Create New Project</span>
+                    <strong class="text-slider"></strong>
+                </p>
+                <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Intro Skew End /-->
+@endsection
+
 @section('content')
-<html>
-  <head>
-    <title>Create project</title>
-  </head>
-  <body>
     <h1>Create new project</h1>
 
     <form method="POST" action="/projects">
@@ -18,7 +35,7 @@
       @csrf
 
       <div class="field">
-          <label class="label" for="title">Title</label>
+          <label class="col-form-label" for="title">Title</label>
           <div class="control">
               <input type="text" class="input {{ $errors->has('title') ? 'is-danger' : '' }}"
                 name="title" placeholder="Title" value="{{ old('title') }}" required>
@@ -41,7 +58,5 @@
         </div>
 
     </form>
-  </body>
-</html>
 
 @endsection

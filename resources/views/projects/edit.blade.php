@@ -1,4 +1,4 @@
-@extends('projects.layouts.layout')
+@extends('layouts.layout')
 
 @section('title')
     Edit Project
